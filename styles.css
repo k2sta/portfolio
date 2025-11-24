@@ -1,0 +1,891 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Red+Rose:wght@300;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+:root {
+    --bg: #F1F1F1;
+    --accent1: #7E66D5;
+    --accent2: #4B7ED3;
+    --text-dark: #000;
+    --text-light: #fff;
+    --radius: 14px;
+    /* --card-pad: 18px; */
+    --max-width: 1200px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text-dark);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.45;
+    font-weight: 300;
+}
+
+/* Typography refinements */
+h3 {
+    font-family: 'Red Rose', serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card .client {
+    font-family: 'Red Rose', serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+b {
+    font-weight: 500;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #7E66D5;
+    font-size: 0.95rem;
+}
+
+a:hover {
+    color: var(--accent1);
+    text-decoration: underline;
+}
+
+.btn,
+.btn.primary {
+    border: 0;
+    padding: 10px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    background: rgb(255, 255, 255);
+    outline: none;
+    box-shadow: 0 6px 18px rgba(50, 50, 93, 0.08);
+    transition:
+        background 0.25s ease,
+        transform 0.18s ease;
+}
+
+.link-btn {
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 0;
+    padding: 10px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    background: rgb(255, 255, 255);
+    outline: none;
+    box-shadow: 0 6px 18px rgba(50, 50, 93, 0.08);
+    transition:
+        background 0.25s ease,
+        transform 0.18s ease;
+    display: inline-block;
+}
+
+.link-btn.selected {
+    background: linear-gradient(90deg, var(--accent1), var(--accent2));
+    color: var(--text-light);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(50, 50, 93, 0.08);
+    text-decoration: none;
+}
+
+.link-btn:hover {
+    background: linear-gradient(90deg, var(--accent1), var(--accent2));
+    color: var(--text-light);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(50, 50, 93, 0.08);
+    text-decoration: none;
+}
+
+.tag {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/* Floating centered sticky nav */
+.top-nav {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 18px;
+    z-index: 40;
+    background: rgb(255, 255, 255);
+    border-radius: 999px;
+    padding: 8px 16px;
+    box-shadow: 0 6px 18px rgba(50, 50, 93, 0.08);
+}
+
+.top-nav ul {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 999px;
+}
+
+.top-nav a:hover {
+    background: linear-gradient(90deg, var(--accent1), var(--accent2));
+    color: var(--text-light)
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    height: 20vh;
+    /* full viewport */
+    min-height: 50px;
+    /* ensure it’s tall on small screens */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 32px;
+    /* horizontal padding only */
+    box-sizing: border-box;
+    background: #F1F1F1;
+}
+
+
+/* Dynamic purple/blue glow */
+.banner-gradient {
+    background:
+        radial-gradient(circle at var(--x1, 30%) var(--y1, 50%), rgba(126, 102, 213, 0.75) 0%, transparent 50%),
+        radial-gradient(circle at var(--x2, 70%) var(--y2, 55%), rgba(75, 126, 211, 0.75) 0%, transparent 50%);
+    filter: blur(70px) saturate(130%);
+    transform: scale(1.2);
+    mix-blend-mode: multiply;
+    position: absolute;
+    inset: -20%;
+    pointer-events: none;
+    z-index: 0;
+    transition: opacity 0.25s linear;
+    will-change: background, transform;
+}
+
+
+.banner-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.banner::after {
+    /* gradient fade into background */
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    /* adjust fade height */
+    pointer-events: none;
+    background: linear-gradient(to bottom,
+            rgba(241, 241, 241, 0) 0%,
+            rgba(241, 241, 241, 0.3) 40%,
+            rgba(241, 241, 241, 0.6) 70%,
+            #F1F1F1 100%);
+
+
+}
+
+
+.logo {
+    text-align: center;
+    /* center container content */
+}
+
+.logo img {
+    display: inline-block;
+    /* so it respects width */
+    width: 80%;
+    /* fills 80% of container by default */
+    max-width: 850px;
+    /* prevents it from being too big on large screens */
+    height: auto;
+    /* maintain aspect ratio */
+}
+
+/* Optional: adjust on very small screens */
+@media (max-width: 480px) {
+    .logo img {
+        width: 90%;
+        /* larger relative size on small screens */
+    }
+}
+
+
+
+.tagline {
+    margin-top: 10px;
+    font-weight: 500;
+    opacity: .85
+}
+
+/* Filters */
+.filters-section {
+    max-width: var(--max-width);
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.filters-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+
+.filter-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 0;
+    padding: 10px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    background: rgb(255, 255, 255);
+    outline: none;
+    box-shadow: 0 6px 18px rgba(50, 50, 93, 0.08);
+    transition:
+        background 0.25s ease,
+        transform 0.18s ease;
+}
+
+.filter-btn.selected {
+    background: linear-gradient(90deg, var(--accent1), var(--accent2));
+    color: var(--text-light);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(50, 50, 93, 0.08);
+}
+
+.filter-btn:hover {
+    background: linear-gradient(90deg, var(--accent1), var(--accent2));
+    color: var(--text-light);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(50, 50, 93, 0.08);
+}
+
+.filter-btn-hover {
+    background: linear-gradient(90deg, var(--accent1), var(--accent2));
+    color: var(--text-light);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(50, 50, 93, 0.08);
+}
+
+/* Projects grid and cards */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    align-items: stretch;
+}
+
+@media (max-width:900px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media (max-width:620px) {
+    .projects-grid {
+        grid-template-columns: 1fr
+    }
+}
+
+.card {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: var(--radius);
+    /*border: 2px solid #ffffff; */
+    background: rgba(255, 255, 255, 0.400);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Trigger button hover when card is hovered */
+.card:hover .btn.primary {
+    background: linear-gradient(90deg, var(--accent1), var(--accent2));
+    color: var(--text-light);
+    border: 1.5px solid #ffffff;
+}
+
+/* default gradient layer (behind content) */
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--hover-color, #7e66d5) 0%, transparent 40%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 0;
+    /* behind by default */
+    pointer-events: none;
+    /* overlay never blocks clicks */
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+/* ensure text and thumb stay above it */
+.card * {
+    position: relative;
+    z-index: 1;
+}
+
+.card.overlay-gradient::before {
+    z-index: 2;
+    /* above content */
+    opacity: 0;
+    pointer-events: none;
+}
+
+.card.overlay-gradient:hover::before {
+    opacity: 1;
+}
+
+/* ensure text stays visible */
+.card.overlay-gradient h3,
+.card.overlay-gradient p,
+.card.overlay-gradient .btn,
+.card.overlay-gradient .tag-list {
+    position: relative;
+    z-index: 3;
+}
+
+
+/* Optional subtle lift on hover 
+.card:hover {
+    transform: translateY(-4px);
+} */
+
+
+.card .thumb {
+    border-radius: 12px 12px 0 0;
+    height: 300px;
+    background: center/cover no-repeat;
+    flex-shrink: 0;
+}
+
+.card .client {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 18px 18px 4px 18px;
+    /* aligns nicely with logo/title */
+}
+
+.card h3 {
+    margin: 6px 0 18px 0;
+    padding-inline: 18px;
+}
+
+.card p {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.7)
+}
+
+.card .tag-list {
+    display: flex;
+    gap: 8px;
+    padding-inline: 18px;
+    flex-wrap: wrap;
+}
+
+.card .tag {
+    font-size: 12px;
+    padding: 6px 8px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.project-logo {
+    display: block;
+    max-width: 100px;
+    /* adjust size */
+    height: auto;
+    margin: 8px 0 12px 18px;
+    /* top, right, bottom, left */
+    /* center above title */
+}
+
+/* card actions */
+.card-actions {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 18px;
+
+}
+
+.btn {
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 0;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn.primary {
+    color: var(--text-dark);
+    text-decoration: none;
+    border: 1.5px solid #000;
+}
+
+.btn.primary:hover {
+    background: linear-gradient(90deg, var(--accent1), var(--accent2));
+    color: var(--text-light);
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(126, 102, 213, 0.12);
+    border: 1.5px solid linear-gradient(90deg, var(--accent1), var(--accent2));
+}
+
+/* About section */
+.about-section {
+    max-width: var(--max-width);
+    margin: 48px auto;
+    padding: 0 20px;
+}
+
+.about-inner {
+    display: flex;
+    gap: 0px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 0%;
+}
+
+.about-image img {
+    width: 620px;
+    height: auto;
+}
+
+/* Mobile stacking */
+@media (max-width: 800px) {
+
+    .about-inner {
+        flex-direction: column;
+        /* Stack image and text */
+        gap: 24px;
+        text-align: left;
+        /* Optional — keeps text alignment normal */
+    }
+
+    .about-image img {
+        width: 100%;
+        /* Let image scale */
+        max-width: 400px;
+        /* Prevent it from becoming too huge */
+        margin: 0 auto;
+        /* Center it */
+        display: block;
+    }
+
+    .about-text {
+        margin-right: 0;
+        text-align: left;
+        /* Keep text aligned left (optional) */
+    }
+}
+
+/* Contact Section */
+.contact-section {
+    position: relative;
+    height: 100vh;
+    /* full screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* pushes text inward like your example */
+    overflow: hidden;
+    color: white;
+}
+
+/* Gradient Background */
+.contact-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(150, 120, 255, 0.6),
+            rgba(90, 130, 255, 0.6));
+    filter: blur(40px);
+    z-index: -1;
+}
+
+/* Content box */
+.contact-content {
+    max-width: 420px;
+}
+
+/* Title */
+.contact-content h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+/* Small underline */
+.underline {
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Text */
+.contact-content p {
+    line-height: 1.5;
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+/* Email link */
+.contact-content a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+
+
+/* --- Project Page Layout --- */
+.project-page {
+    display: flex;
+    min-height: 100vh;
+    background: #f1f1f1;
+}
+
+/* Left section (fixed/sticky on desktop) */
+.project-left {
+    width: 35%;
+    max-width: 480px;
+    background: #fff;
+    padding: 48px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.05);
+    overflow-y: auto;
+    z-index: 1;
+}
+
+.project-left::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(150deg, var(--hover-color, #7e66d5) 0%, transparent 15%);
+    opacity: 0.65;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.project-left .project-cover {
+    display: none;
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.project-left .client {
+    font-family: 'Red Rose', serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.project-left .title {
+    font-family: 'Red Rose', serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+    margin-top: 4px;
+}
+
+.project-left .desc {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.project-left .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-left .tag {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+}
+
+/* Scrollable links to project sections */
+.section-links {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.section-links a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 0.95rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.section-links a:hover {
+    color: var(--accent1);
+    transform: translateX(4px);
+}
+
+.section-links a.active {
+    color: var(--accent1);
+    font-weight: 600;
+    transform: translateX(4px);
+}
+
+/* Right section (scrollable content) */
+.project-right {
+    flex: 1;
+    padding: 60px 80px;
+    overflow-y: auto;
+    margin-left: 35%;
+}
+
+.project-right h2,
+.project-right h3 {
+    font-family: 'Red Rose', serif;
+    font-weight: 700;
+}
+
+.project-right p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 18px;
+}
+
+.project-right img {
+    width: 100%;
+    border-radius: 12px;
+    margin: 24px 0;
+}
+
+/* Remove extra margin from grid images */
+.col-2-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 16px 0;
+    align-items: center;
+    /* keeps mixed content aligned nicely */
+}
+
+.col-2-gallery img,
+.col-2-gallery video,
+.col-2-gallery p,
+.col-2-gallery div {
+    width: 100%;
+    height: auto;
+    border: none;
+    margin: 0;
+    display: block;
+    outline: none;
+    background: transparent;
+}
+
+video {
+    display: block;
+    border: none;
+    outline: none;
+    background: transparent;
+    /* or match parent bg */
+}
+
+
+.col-3-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.col-3-gallery img {
+    margin: 0;
+}
+
+.col-3-gallery video {
+    width: 100%;
+    display: block;
+    margin-bottom: 1em;
+    height: auto;
+    border-radius: 12px;
+    /* preserves aspect ratio */
+}
+
+.white-space {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+
+
+
+/* Project feedback section */
+.feedback {
+    background-color: #ffffff;
+    padding: 48px;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.05);
+    padding: 18px;
+    border-radius: var(--radius);
+}
+
+/* Stack images on smaller screens */
+@media (max-width: 700px) {
+    .col-2-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* --- Responsive layout --- */
+@media (max-width: 880px) {
+    .project-page {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .project-left {
+        position: relative;
+        width: 100%;
+        max-width: none;
+        height: auto;
+        box-shadow: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        padding: 32px 24px;
+        overflow-y: visible;
+    }
+
+    .project-right {
+        margin-left: 0;
+        padding: 32px 24px;
+        overflow-y: visible;
+    }
+}
+
+
+/* small helpers */
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.kicker {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: none;
+}
+
+/* focus states */
+a:focus,
+button:focus {
+    outline: 3px solid rgba(126, 102, 213, 0.12);
+    outline-offset: 3px
+}
+
+/* responsive tweaks for hero text */
+@media (max-width:540px) {
+    .logo {
+        font-size: 36px
+    }
+
+    .banner {
+        height: 44vh;
+        min-height: 300px
+    }
+
+    .top-nav {
+        top: 10px
+    }
+}
