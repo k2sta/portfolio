@@ -680,6 +680,7 @@ function getSelectedFilters() {
 
 function initFilters() {
     const container = document.getElementById('filters');
+    if (container.childElementCount > 0) return;
     // Add "clear" button at start (optional)
     allFilters.forEach(f => {
         const b = document.createElement('button');
