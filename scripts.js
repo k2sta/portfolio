@@ -13,7 +13,7 @@ const projects = [
         title: 'Making Mental Health Resources More Engaging for the Youth Through UX and Gamification',
         desc: ' ',
         tags: ['UI Design', 'UX Research', 'Motion'],
-        image: 'covers/helge1.png',
+        image: 'covers/helge1.webp',
         hoverColor: '#7E66D5',
         long: `
             <img src="helge/mockup.png" alt="Helge Kool" style="width:100%;border-radius:12px;" />
@@ -151,7 +151,7 @@ We are very satisfied with Kärt's contribution. We liked her creativity and ini
         title: 'Festival Campaign – Animated Ads & Printed Materials',
         desc: ' ',
         tags: ['Visual Communication', 'Motion', 'Ads'],
-        image: 'covers/arvamus.png',
+        image: 'covers/arvamus.webp',
         hoverColor: '#eec97d',
         overlayGradient: true,
         long: `<img src="arvamus/Olumpia-AF.png" alt="Arvamusfestival ad displayed in Talllinn city." />
@@ -272,7 +272,7 @@ The developer of the team was amazed at how well it is possible to take a single
         title: 'Social Media & Ad Design',
         desc: ' ',
         tags: ['Visual Communication'],
-        image: 'covers/sotsm.png',
+        image: 'covers/sotsm.webp',
         hoverColor: '#aed6ff',
         overlayGradient: true,
         long: `<img src="sotsm/a.png" alt="" />
@@ -316,7 +316,7 @@ I designed social media posts for Facebook and Instagram, following the visual i
         title: 'Website to Aid in Restoring Viljandi’s Historic Stairway',
         desc: ' ',
         tags: ['UI Design', 'Website'],
-        image: 'covers/viljandi1.png',
+        image: 'covers/viljandi1.webp',
         hoverColor: '#eec97d',
         long: `<img src="viljandi/mockup.png" alt="Website mockup." />
         <h2 id="viljandi-overview">Overview</h2>
@@ -345,7 +345,7 @@ I contributed to the website project by designing the layout and visual interfac
         title: 'Designing Tote Bags that Reflect the Identity of Tartu City',
         desc: ' ',
         tags: ['Visual Communication', 'Physical Product'],
-        image: 'covers/tartu.png',
+        image: 'covers/tartu.webp',
         hoverColor: '#ffcdf4',
         overlayGradient: true,
         long: `
@@ -387,7 +387,7 @@ I contributed to the website project by designing the layout and visual interfac
         title: 'Moodiest App – Exploration of AI in Mood Tracking',
         desc: ' ',
         tags: ['UI Design', 'Mobile App', 'Digital Product'],
-        image: 'covers/moodiest1.png',
+        image: 'covers/moodiest1.webp',
         hoverColor: '#eec97d',
         long: `
         <img src="mood/mood1.png" alt="" />
@@ -505,7 +505,7 @@ Development and testing are ongoing, and this process continues to reveal new co
         title: 'Logo Design System for Sutlema-Aespa Kindergarten',
         desc: ' ',
         tags: ['Visual Communcation', 'Branding', 'Logo Design'],
-        image: 'covers/lasteaed.png',
+        image: 'covers/lasteaed.webp',
         hoverColor: '#eec97d',
         overlayGradient: true,
         long: `
