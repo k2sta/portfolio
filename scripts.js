@@ -473,7 +473,7 @@ In the updated version, I fleshed out the concept more and worked on these updat
 
 <h2 id="AI">AI "Moody"</h2>
 <div class="col-2-gallery">
-<img src="mood/pilt.png" alt="" style="width: 80%;" />
+<img src="mood/Pilt.png" alt="" style="width: 80%;" />
 <p>Moody is an AI chatbot feature integrated into the app. Users can engage with the chatbot to receive personalized recommendations, coping strategies, and motivational messages based on their mood patterns and activities.
 <br><br>
 Moody also gives the user short daily feedback based on their daily mood and activities. That means the user receives unique and personalised content every time they successfully log their mood. That may help to keep the users engaged and the user experience feeling fresh each time.
@@ -591,7 +591,7 @@ Jooks on lahe had successfully launched their app, but needed a website redesign
         image: 'covers/voco.png',
         hoverColor: '#aed6ff',
         overlayGradient: true,
-        long: `<img src="voco/1.png" alt="" />
+        long: `<img src="VOCO/1.png" alt="" />
         <h2 id="voco-overview">Overview</h2>
         <p>Tartu Vocational College (VOCO) was looking for a unique, branded souvenir that they could gift to international guests, sponsors, and as awards for students at competitions. The aim was to design something that felt distinctly VOCO while also being practical.<br><br>
 As part of a team project, we developed a custom wooden phone and tablet stand that reflects the school's tech-oriented identity and can also be used effectively in everyday life.
@@ -599,21 +599,21 @@ As part of a team project, we developed a custom wooden phone and tablet stand t
 The project covered the full design process: ideation, research, technical drawings, 3D modelling, prototyping, brochure design, and final production. My main responsibilities included product design, technical drawings, and 3D models, as well as supporting the prototyping and manufacturing stages.</p>
           <h2 id="voco-research">Research Phase</h2>
 <p>The project began with the research phase. We gathered inspiration by finding examples of different phone stand designs and discussing which aspects of the designs were successful and which could be improved. We did market research to identify the target demographic, understand the core benefits of the product, and figure out ways to differentiate from existing products. We also considered the technical feasibility, mapped out potential production partners and calculated the costs.</p>
-<img src="voco/research.png" alt="" />
+<img src="VOCO/research.png" alt="" />
 <h2 id="voco-design">Product Design</h2>
 <p>After deciding on a general style and sketching out different concepts, the team agreed on a design. I then prepared technical drawings to define the dimensions, construction and exact design of the phone stand.</p>
-<img src="voco/technical.png" alt="" />
+<img src="VOCO/technical.png" alt="" />
 <p>I was also responsible for building 3D models that helped visualize the product, test proportions, and refine the design before moving onto physical prototyping.</p>
-<img src="voco/3D.png" alt="" />
+<img src="VOCO/3D.png" alt="" />
 <h2 id="voco-print">Brochure Design</h2>
 <p>In order to present the concept and its functionality, we designed a brochure which follows VOCO’s visual identity guidelines. I contributed the 3D models as visual elements to help explain how the stand is assembled.</p>
-<img src="voco/juhend1.png" alt="" />
-<img src="voco/juhend2.png" alt="" />
+<img src="VOCO/juhend1.png" alt="" />
+<img src="VOCO/juhend2.png" alt="" />
 <h2 id="voco-proto">Prototypes & Finished Product</h2>
 <p>We developed several prototypes to test size, assembly, stability, durability, and different finishes.</p>
 <div class="col-2-gallery">
-<img src="voco/valmis1.jpeg" alt="" />
-<img src="voco/valmis2.jpg" alt="" />
+<img src="VOCO/valmis1.jpeg" alt="" />
+<img src="VOCO/valmis2.jpg" alt="" />
 </div>
 <p>The final stand was produced by a local woodworking company using birch plywood. Today VOCO uses the phone stands both as gifts for international visitors and as practical tools in the classroom, from video calls to UI design work in prototyping and development classes.</p>
 
