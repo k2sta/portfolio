@@ -154,7 +154,7 @@ We are very satisfied with Kärt's contribution. We liked her creativity and ini
         image: 'covers/arvamus.webp',
         hoverColor: '#eec97d',
         overlayGradient: true,
-        long: `<img src="arvamus/Olumpia-AF.png" alt="Arvamusfestival ad displayed in Talllinn city." />
+        long: `<img src="arvamus/Olumpia-AF.webp" alt="Arvamusfestival ad displayed in Talllinn city." />
         <h2 id="arvamus-overview">Overview</h2>
         <p>Arvamusfestival (The Opinion Festival) is an annual Estonian event, where open discussions on relevant societal issues are encouraged. It brings together citizens, policymakers, and organizations to shape the culture of dialogue and democracy in Estonia.
 
@@ -197,9 +197,9 @@ Your browser does not support the video tag.
         title: 'Transforming a School’s Website with Research-Driven UX/UI Design',
         desc: ' ',
         tags: ['UI Design', 'UX Research', 'Website'],
-        image: 'covers/võru1.png',
+        image: 'covers/võru1.webp',
         hoverColor: '#120d8d',
-        long: ` <img src="voru/mockup1.jpeg" alt="Website mockup." />
+        long: ` <img src="voru/mockup1.webp" alt="Website mockup." />
         <h2 id="võru-overview">Overview</h2>
         <p>Võru Gymnasium is a high school in south of Estonia that values their ethnic roots, strong effort in learning and the desire to keep progressing. For their 10th anniversary, the shcool wanted to freshen up their branding and update their website with a new and fresh look.
 <br><br>
@@ -233,9 +233,8 @@ As a result, the audit and survey uncovered several key issues:
 <p>While designing the UI, I adhered to the school’s CVI guidelines, which outlined strict rules for colors, typography, and graphical elements. Within these brand limitations, I found creative ways to deliver a fresh, user-friendly design that aligned with the school’s identity.</p>
 <p>Throughout the process, I focused on incorporating key insights from the UX research to make sure, that the new design wouldn’t only have an improved visual, but also enhance the the overall user experience. For example, to help address navigation issues, I added a secondary menu with links that I knew users would be looking for the most.</p>
 <img src="voru/VG_avaleht.png" alt="Website visual design" />
-<img src="voru/mockup1.jpeg" alt="Website visual design" />
+<img src="voru/sisseastujad.jpg" alt="Website visual design" />
 <img src="voru/mockup2.jpeg" alt="Website visual design" />
-<img src="voru/mockup3.jpeg" alt="Website visual design" />
 <h2 id="võru-style">Style guide</h2>
 <p>I used the existing CVI to guide the website’s design, pulling fonts, colors, and key visual elements. Since the CVI didn’t include detailed web-specific guidelines (such as button styles, hover effects, typography scales, or layouts), I expanded on it and created a style guide that translated the brand identity into a clear, developer-friendly format.</p>
 <img src="voru/style-guide.png" alt="UI style guide for the website, which includes typography styles, various button styles, colours and icons." />
@@ -275,7 +274,7 @@ The developer of the team was amazed at how well it is possible to take a single
         image: 'covers/sotsm.webp',
         hoverColor: '#aed6ff',
         overlayGradient: true,
-        long: `<img src="sotsm/a.png" alt="" />
+        long: `<img src="sotsm/a.webp" alt="" />
         <h2 id="sotsm">Social Media & Ad Design</h2>
         <p>I have designed social media posts, ads, and print materials for various different organizations from different fields. Here you can see an overview of some of that work.</p>
         <h2 id="andre">Andre Farm</h2>
@@ -318,9 +317,9 @@ I designed social media posts for Facebook and Instagram, following the visual i
         tags: ['UI Design', 'Website'],
         image: 'covers/viljandi1.webp',
         hoverColor: '#eec97d',
-        long: `<img src="viljandi/mockup.png" alt="Website mockup." />
+        long: `<img src="viljandi/mockup.webp" alt="Website mockup." />
         <h2 id="viljandi-overview">Overview</h2>
-        <p>Trepimägi is a historic stairway in Viljandi, built over a century ago to connect the Old Town with Lake Viljandi. As an important piece of the town’s cultural heritage and a beloved landmark frequented by locals, it deserves careful preservation. The website <a target="_blank" href="https://trepimagi.ee/">www.trepimagi.ee</a> was created to support the stairway’s reconstruction by gathering donations for its restoration.
+        <p>Trepimägi is a historic stairway in Viljandi, built over a century ago to connect the Old Town with Lake Viljandi. As an important piece of the town’s cultural heritage and a beloved landmark frequented by locals, it deserves careful preservation. The website was created to support the stairway’s reconstruction by gathering donations for its restoration.
 <br><br>
 I contributed to the website project by designing the layout and visual interface based on Viljandi City’s CVI, focusing on simplicity and usability. My goal was to help visitors navigate the site easily and find the donation option that best suited them among the three tiers.</p>
 <h2 id="viljandi-flow">User Flow</h2>
@@ -333,8 +332,10 @@ I contributed to the website project by designing the layout and visual interfac
 <img src="viljandi/popup1.png" alt="" />
 <p>The popup for buying a step is split into three stages: choosing a step, filling in contact details, and completing payment. This approach allows users to focus on one task at a time, creating a simpler and smoother user experience.</p>
 <img src="viljandi/popup2.png" alt="" />
-<h2 id="viljandi-reflection">Reflection</h2>
-<p>My designs for the Trepimägi landing page focused on simplicity and usability, making it easy for visitors to navigate and select donation options. The site went live in March 2025 and has reached over 70% of the project’s €200,000 donation goal.</p>
+<h2 id="viljandi-reflection">Results</h2>
+<p>The landing page launched in <b>March 2025</b> and played a key role in supporting the public fundraising effort for the stairway’s reconstruction. By presenting the project clearly and guiding visitors to suitable donation tiers, <b>the site helped lower the barrier to participation for both individuals and organizations.</b></p>
+<p><b>In 8 months</b> the fundraising campaign had successfully engaged <b>more than 200 supporters</b> and raised over <b>140,000€</b> in private donations, which was about <b>76% of the project’s total cost.</b> Restored Trepimägi was officially reopened on 25th of October 2025 in a public ceremony, marking the completion of a community-driven restoration effort.</p>
+<p>The website worked well within a wider community effort. The success of the restoration came from many things working together – local interest, city communication, and outreach across different channels. The website acted as a clear starting point where people could learn about the project and see how they could contribute. Matching the City of Viljandi’s visual identity <b>helped support the overall campaign</b> and the simple donation process <b>made participation straightforward and transparent.</b></p>
 
         `
     },
@@ -349,7 +350,7 @@ I contributed to the website project by designing the layout and visual interfac
         hoverColor: '#ffcdf4',
         overlayGradient: true,
         long: `
-        <img src="tartu/mockup-lai.png" alt="Pink tote bag mockup photo." />
+        <img src="tartu/mockup-lai.webp" alt="Pink tote bag mockup photo." />
         <h2 id="tartu-overview">Overview</h2>
         <p>These tote bags were created for the Tartu Souvenir Competition, where my design was selected as one of the winners. The tote bags were produced in collaboration with a local print shop and are now sold at the Tartu Tourist Information Centre.</p>
         <img src="tartu/extra.png" alt="Pink tote bag with Tartu City map printed on it."/>
@@ -509,7 +510,7 @@ Development and testing are ongoing, and this process continues to reveal new co
         hoverColor: '#eec97d',
         overlayGradient: true,
         long: `
-        <img src="sutlema/5.png" alt="" />
+        <img src="sutlema/5.webp" alt="" />
         <h2 id="sutlema-overview">Overview</h2>
         <p>Sutlema-Aespa Kindergarten operates across two buildings in the villages of Sutlema and Aespa, surrounded by beautiful natural landscapes. The kindergarten places strong emphasis on creating a calm, safe environment where children can learn through diverse activities, with a particular focus on environmental themes. Children often go on nature hikes and use natural materials in their arts and crafts.
 <br>
@@ -534,13 +535,13 @@ With this in mind, I created a flexible logo system that makes each house distin
     {
         id: 'p11',
         client: 'JooksOnLahe',
-        title: 'Improving the User Experience of a Sports App Website',
+        title: 'Improving the User Experience of an App Landing Page',
         desc: ' ',
         tags: ['UX Research',],
         image: 'covers/jooks-cover.png',
         hoverColor: '#4aa27d',
         long: `
-        <img src="jooks/jooksm.png" alt="" style="width:100%"/>
+        <img src="jooks/jooksm.webp" alt="" style="width:100%"/>
          <h2 id="jooks-overview">Overview</h2>
         <p>Jooks on lahe is a mobile app that encourages people to build a habit of regular movement such as walking, running, hiking etc. The core challenge is #igapäev5km (every day 5 km), where participants aim to move at least 5 km per day and track it in the app. Participants earn points and are eligible for prizes if they complete the challenge. The app is also strongly linked to a community aspect – supporting, motivating, and sharing with other users.
 <br><br>
