@@ -622,17 +622,52 @@ The project covered the full design process: ideation, research, technical drawi
         `
     },
 
-    /* PROJECT FILES MISSING
+
     {
-        id: 'p11',
-        client: 'FRILLICE',
-        title: 'What Stops Users from Becoming Paying Subscribers? UX Research for a Nutrition App',
+        id: 'p9',
+        client: 'MARAT',
+        title: 'Improving the Checkout Process of an E-Commerce Site',
         desc: ' ',
-        tags: ['UX Research', 'Mobile App'],
-        image: 'covers/frillice1.png',
-        hoverColor: '#7E66D5',
-        long: `<h2>PixelPlay</h2><p>Interaction experiments.</p>`
-    }, */
+        tags: ['UX Research', 'Website'],
+        image: 'covers/Marat.png',
+        hoverColor: '#f6d7aa',
+        long: `
+        <img src="Marat/marat-mockup.png" alt="" />
+        <h2 id="marat-overview">Overview</h2>
+        <p>Marat is one of the oldest and most well-known brands in the Estonian clothing industry. As the company continues to grow its e-commerce channel, improving the digital shopping experience has become a priority.</p>
+        <p>This project focused on optimizing Marat’s online checkout process to reduce friction and improve conversion. The work included customer journey mapping to determine the most frictionless purchase flow, followed by the design of wireframes. These wireframes served as the foundation for the new checkout pages that were then implemented on Marat’s website.</p>
+        <h2 id="marat-flow">User Flow</h2>
+        <p>When initially looking at the existing checkout process, I made mental notes for myself about it being convoluted, long, and confusing. Mainly because all of the info was crammed onto one page, which made it seem like there was a lot of scrolling and filling of fields.</p>
+        <p>I then mapped out the user journey from searching for products to placing an order, with the main focus being the checkout process. I made notes of all the options that should be available for the user as well as the moments when the system should notify the user or give a confirmation.</p>
+        <img src="marat/journey.png" alt="" />
+        
+        <h2 id="marat-wireframes">Wireframes</h2>
+
+        <p><b>Compact Layout</b></p>
+        <p>Based on the user flow I started drawing out wireframes. For the layout of the checkout page I opted for a split screen: on the right side the user can always see the cart with the added items and prices. The user is able to change the quantities and apply a discount code. On the left side of the screen is where the main activity for finishing the checkout process takes place. All of the necessary info is always visible without the user having to scroll.</p>
+        <img src="Marat/2-sign-in.png" alt="" />
+
+        <p><b>Simplifying the Process</b></p>
+        <p>The main way I was able to simplify the existing checkout process was by dividing the process into 3 steps: billing info, delivery info, and payment. All of these steps were shown on separate pages. This approach was able to reduce the user’s cognitive load and make navigating simple.</p>
+        
+        <p><b>Removing Unnecessary Fields</b></p>
+        <p>Another change we were able to implement was removing the user’s home address from the billing info fields. As Marat offers shipping via Omniva/Itella parcel machines or pickup from the Marat store, then knowing the home address is actually not necessary. As per Estonian regulations, the address is not required for billing info either. Therefore, removing the address field is good for making the checkout process faster as well as providing the customer with more privacy.</p>
+        <img src="Marat/3-billing.png" alt="" />
+        <img src="Marat/4-delivery.png" alt="" />
+        <img src="Marat/5-payment.png" alt="" />
+
+        <p><b>Success</b></p>
+        <p>The success screen is important for communicating to the user that the order was successfully placed. Some additional ways to use this screen are for upselling, such as giving the customer the ability to add more items to the order in a certain timeframe right after placing the order, or focusing on brand engagement by guiding users to the brand’s social media channels.</p>
+        <img src="Marat/6-end.png" alt="" />
+
+        <h2 id="marat-result">Result</h2>
+        <p>The final UI design was built upon the wireframes as the structural foundation, while incorporating the site’s existing visual style..</p>
+        <img src="Marat/1.png" alt="" />
+        <img src="Marat/2.png" alt="" />
+        <img src="Marat/3.png" alt="" />
+
+        `
+    },
 
 
 
