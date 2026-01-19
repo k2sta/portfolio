@@ -629,7 +629,7 @@ The project covered the full design process: ideation, research, technical drawi
         title: 'Improving the Checkout Process of an E-Commerce Site',
         desc: ' ',
         tags: ['UX Research', 'Website'],
-        image: 'covers/Marat.png',
+        image: 'covers/marat.png',
         hoverColor: '#f6d7aa',
         long: `
         <img src="Marat/marat-mockup.png" alt="" />
