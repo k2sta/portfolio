@@ -361,7 +361,8 @@ I contributed to the website project by designing the layout and visual interfac
         <h2 id="tartu-design">The Design</h2>
         <img src="tartu/tartu-disain.png" alt="Minimalistic design of the Tartu City map."
         <p>Using the map of lighted cycle paths as inspiration, I created a minimalist composition aligned with Tartu’s visual identity guidelines. I simplified the map by removing dead ends and making the lines more fluid, resulting in a cleaner, more legible design. Green and yellow dots mark the city’s green areas, while the Emajõgi River is highlighted as a key landmark for orientation.</p>
-         <div class="col-2-gallery">
+         <br>
+        <div class="col-2-gallery">
          <img src="tartu/r1.png" alt="Pink tote bag with the design printed on top shown in daylight conditions."/>
          <img src="tartu/r2.png" alt="Pink tote bag with the design printed on top shown in night conditions with reflective effect."/>
          <img src="tartu/m1.png" alt="Black tote bag with the design printed on top shown in daylight conditions."/>
@@ -369,6 +370,7 @@ I contributed to the website project by designing the layout and visual interfac
          <img src="tartu/k1.png" alt="Yellow tote bag with the design printed on top shown in daylight conditions."/>
          <img src="tartu/k2.png" alt="Yellow tote bag with the design printed on top shown in night conditions with reflective effect."/>
          </div>
+         <br>
          <h2 id="tartu-finished">Finished Product</h2>
          <p>The design was printed sustainably on 100% cotton tote bags using silk screen printing. The cycle paths were produced with a reflective finish — referencing the illuminated paths themselves while also serving a functional purpose by increasing safety for pedestrians at night.</p>
          <div class="col-2-gallery">
@@ -630,7 +632,7 @@ The project covered the full design process: ideation, research, technical drawi
         desc: ' ',
         tags: ['UX Research', 'Website'],
         image: 'covers/marat.png',
-        hoverColor: '#f6d7aa',
+        hoverColor: '#f6c1aa',
         long: `
         <img src="Marat/marat-mockup.png" alt="" />
         <h2 id="marat-overview">Overview</h2>
@@ -678,7 +680,7 @@ The project covered the full design process: ideation, research, technical drawi
         desc: ' ',
         tags: ['Visual Communication', 'Photography'],
         image: 'covers/kombucha.png',
-        hoverColor: '#ffcdf4',
+        hoverColor: '#f3869a',
         overlayGradient: true,
         long: `
         <h2 id="catrain-overview">Overview</h2>
